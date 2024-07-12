@@ -192,7 +192,7 @@ if st.session_state.current_page == 'Youtube':
     col1, col2 = st.columns(2)
     with col1:
         youtube_copy_but = st.button("📋 Copy", use_container_width=True)
-        st.button(label=st.session_state['audio_icon'], use_container_width=True)
+        youtube_audio_but = st.button(label=st.session_state['audio_icon'], use_container_width=True)
     with col2:
         translator = st.button("🌐 Translate", use_container_width=True)
         erase_youtube = st.button("❌ Delete", use_container_width=True, help="Clear the text field")
