@@ -2333,7 +2333,7 @@ if st.session_state.current_page == "Verification code":
 
 
 if st.session_state.current_page == "Password change":
-    st.title("-\u00A0\u00A0Password update\u00A0\u00A0-")
+    st.title("-\u00A0Password update\u00A0-")
 
     st.subheader("")
 
