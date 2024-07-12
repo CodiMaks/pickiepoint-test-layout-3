@@ -341,11 +341,12 @@ if st.session_state.current_page == 'Youtube':
 
     youtube_message_placeholder = st.empty()
 
-    youtube_text_area = st.text_area("Y", label_visibility="hidden", placeholder="Paste Youtube url...", height=300, value=youtube_text_area_value)
-
-    transcribe_but = st.button("Transcribe", use_container_width=True, type="primary")
+    youtube_text_area = st.text_area("Y", label_visibility="hidden", placeholder="Paste Youtube url...", height=550, value=youtube_text_area_value)
 
     st.write("")
+    
+    transcribe_but = st.button("Transcribe", use_container_width=True, type="primary")
+
     st.write("")
 
     bottom_col1, bottom_col2, bottom_col3 = st.columns(3)
