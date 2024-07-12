@@ -2140,38 +2140,38 @@ if st.session_state.current_page == "Sign up":
 
 if st.session_state.current_page == "Trial":
 
-    trial_title_col1, trial_title_col2, trial_title_col3 = st.columns(3)
-    with trial_title_col2:
-        st.title("Get started")
-        st.image("pickiepoint_logo_profile_picture.png")
+    # trial_title_col1, trial_title_col2, trial_title_col3 = st.columns(3)
+    # with trial_title_col2:
+    st.title("Get started")
+    st.image("pickiepoint_logo_profile_picture.png")
 
-        st.header("")
+    st.header("")
 
-        st.caption('<span style="font-size:32px; font-weight:bold; color:green;">3 days free trial</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:22px; font-weight:bold; color:green;">No credit card required</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:26px; color:yellow;">Then 12.99$/month</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:32px; font-weight:bold; color:green;">3 days free trial</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:22px; font-weight:bold; color:green;">No credit card required</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:26px; color:yellow;">Then 12.99$/month</span>', unsafe_allow_html=True)
 
-        st.header("")
+    st.header("")
 
-        st.caption('<span style="font-size:20px; color:white;">✅ Unlimited usage</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Zero ads</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Abstractive summary</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Extractive summary</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Summary from URL</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ 70 languages</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Auto detect language</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Audio support</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Creative paraphrasing</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Youtube captions</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Unlimited usage</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Zero ads</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Abstractive summary</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Extractive summary</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Summary from URL</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ 70 languages</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Auto detect language</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Audio support</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Creative paraphrasing</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Youtube captions</span>', unsafe_allow_html=True)
 
-        st.title("")
+    st.title("")
 
-        st.button("Start trial", type="primary", use_container_width=True)
+    st.button("Start trial", type="primary", use_container_width=True)
 
-        go_trial_confirmation = st.button("Go trial confirmation")
-        if go_trial_confirmation:
-            st.session_state.current_page = "Trial confirmation"
-            st.rerun()
+    go_trial_confirmation = st.button("Go trial confirmation")
+    if go_trial_confirmation:
+        st.session_state.current_page = "Trial confirmation"
+        st.rerun()
 
 
 if st.session_state.current_page == "Trial confirmation":
