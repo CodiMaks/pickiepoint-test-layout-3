@@ -1862,9 +1862,10 @@ if st.session_state.current_page == "Summary":
 
 if st.session_state.current_page == 'Settings':
     
-    st.title("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0⚙ Settings")
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0⚙ Settings")
 
-    st.subheader("")
+    st.write("")
+    st.write("")
     
     subscription_container = st.container(border=True)
     with subscription_container:
@@ -1940,7 +1941,7 @@ if st.session_state.current_page == 'Settings':
         st.session_state.current_page = "Summary"
         st.rerun()
 
-    st.subheader("")
+    st.write("")
 
     settings_subcol1, settings_subcol2, settings_subcol3 = st.columns(3)
     with settings_subcol2:
