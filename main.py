@@ -1862,7 +1862,7 @@ if st.session_state.current_page == "Summary":
 
 if st.session_state.current_page == 'Settings':
     
-    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0⚙ Settings\u00A0\u00A0\u00A0\u00A0\u00A0-")
+    st.title("-\u00A0\u00A0\u00A0⚙ Settings\u00A0\u00A0\u00A0-")
 
     st.write("")
     st.write("")
