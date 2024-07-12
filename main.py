@@ -1118,7 +1118,7 @@ if st.session_state.current_page == "Summary":
 
     summary_message_placeholder = st.empty()
 
-    summary_length_area = st.text_input("S", label_visibility="hidden", placeholder="             Summary length in sentences")
+    summary_length_area = st.text_input("S", label_visibility="hidden", placeholder="           Summary length in sentences")
 
     summary_text_area = st.text_area("S", label_visibility="hidden", placeholder="Paste link or text to summarize...", height=500, value=summary_text_area_value)
 
