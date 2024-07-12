@@ -2174,13 +2174,11 @@ if st.session_state.current_page == "Trial":
 
 if st.session_state.current_page == "Trial confirmation":
 
-    trial_conf_col1, trial_conf_col2, trial_conf_col3 = st.columns(3)
-    st.image("pickiepoint_website_trial_confirmation.png", width=670)
+    # trial_conf_col1, trial_conf_col2, trial_conf_col3 = st.columns(3)
+    st.image("pickiepoint_website_trial_confirmation.png", use_column_width=True)
     st.header("")
 
-    trial_conf_sub_col1, trial_conf_sub_col2, trial_conf_sub_col3 = st.columns(3)
-    with trial_conf_sub_col2:
-        thanks_but = st.button("THANKS", type="primary", use_container_width=True)
+    thanks_but = st.button("THANKS", type="primary", use_container_width=True)
 
     if thanks_but:
         st.session_state.current_page = "Summary"
