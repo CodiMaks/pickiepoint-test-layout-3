@@ -2176,7 +2176,7 @@ if st.session_state.current_page == "Trial confirmation":
 
     # trial_conf_col1, trial_conf_col2, trial_conf_col3 = st.columns(3)
     st.image("pickiepoint_website_trial_confirmation.png", use_column_width=True)
-    st.header("")
+    st.subheader("")
 
     thanks_but = st.button("THANKS", type="primary", use_container_width=True)
 
@@ -2191,40 +2191,38 @@ if st.session_state.current_page == "Trial confirmation":
 
 
 if st.session_state.current_page == "Subscribe":
-    sub_title_col1, sub_title_col2, sub_title_col3 = st.columns(3)
-    with sub_title_col2:
-        st.title("Pickiepoint subscription")
-        st.image("pickiepoint_logo_profile_picture.png")
+    st.title("Pickiepoint sub")
+    st.image("pickiepoint_logo_profile_picture.png")
 
-        st.header("")
+    st.subheader("")
 
-        st.caption('<span style="font-size:32px; font-weight:bold; color:orange;">Trial has ended</span>',
-                   unsafe_allow_html=True)
-        st.caption('<span style="font-size:24px; font-weight:bold; color:green;">Get unlimited access</span>',
-                   unsafe_allow_html=True)
-        st.caption('<span style="font-size:24px; color:yellow;">For just 12.99$/month</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:32px; font-weight:bold; color:orange;">-\u00A0\u00A0\u00A0Trial has ended\u00A0\u00A0\u00A0-</span>',
+               unsafe_allow_html=True)
+    st.caption('<span style="font-size:24px; font-weight:bold; color:green;">-\u00A0\u00A0\u00A0\u00A0\u00A0Get unlimited access\u00A0\u00A0\u00A0\u00A0\u00A0-</span>',
+               unsafe_allow_html=True)
+    st.caption('<span style="font-size:24px; color:yellow;">-\u00A0\u00A0\u00A0\u00A0For just 12.99$/month\u00A0\u00A0\u00A0\u00A0-</span>', unsafe_allow_html=True)
 
-        st.header("")
+    st.header("")
 
-        st.caption('<span style="font-size:20px; color:white;">✅ Unlimited usage</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Zero ads</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Abstractive summary</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Extractive summary</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Summary from URL</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ 70 languages</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Auto detect language</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Audio support</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Creative paraphrasing</span>', unsafe_allow_html=True)
-        st.caption('<span style="font-size:20px; color:white;">✅ Youtube captions</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Unlimited usage</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Zero ads</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Abstractive summary</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Extractive summary</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Summary from URL</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ 70 languages</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Auto detect language</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Audio support</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Creative paraphrasing</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:20px; color:white;">✅ Youtube captions</span>', unsafe_allow_html=True)
 
-        st.title("")
+    st.subheader("")
 
-        st.button("Continue", type="primary", use_container_width=True)
+    st.button("Continue", type="primary", use_container_width=True)
 
-        go_summary_but = st.button("Go summary")
-        if go_summary_but:
-            st.session_state.current_page = "Summary"
-            st.rerun()
+    go_summary_but = st.button("Go summary")
+    if go_summary_but:
+        st.session_state.current_page = "Summary"
+        st.rerun()
 
 
 if st.session_state.current_page == "Login":
