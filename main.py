@@ -2270,11 +2270,11 @@ if st.session_state.current_page == "Login":
 
 if st.session_state.current_page == "Forgot password":
 
-    st.title("|We got you covered|")
+    st.title("We got you covered")
 
     st.subheader("")
 
-    st.write("Just enter your email that you've used at signup down below and we will send you a verification code that you can use to change your password")
+    st.write("Just enter your email that you've used at signup down below and we will send you a verification code that you can use to change your password.")
     forgot_pass_message_placeholder = st.empty()
     forgot_pass_email_placeholder = st.text_input(label="", placeholder="📧 Email")
 
@@ -2312,11 +2312,8 @@ if st.session_state.current_page == "Forgot password":
 
 if st.session_state.current_page == "Verification code":
 
-    ver_code_title_col1, ver_code_title_col2, ver_code_title_col3 = st.columns(3)
-    with ver_code_title_col2:
-        st.title("Enter code")
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Enter code\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
 
-    st.title("")
     st.write("")
 
     st.write(
@@ -2324,11 +2321,10 @@ if st.session_state.current_page == "Verification code":
     verification_code_message_placeholder = st.empty()
     verification_code_placeholder = st.text_input(label="", placeholder="🔐 Verification code")
 
-    st.header("")
+    st.write("")
+    st.write("")
 
-    ver_code_col1, ver_code_col2, ver_code_col3 = st.columns(3)
-    with ver_code_col2:
-        verify_code_but = st.button("Verify", type="primary", use_container_width=True)
+    verify_code_but = st.button("Verify", type="primary", use_container_width=True)
 
     if verify_code_but:
         st.session_state.current_page = "Password change"
