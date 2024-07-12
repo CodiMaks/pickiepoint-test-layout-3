@@ -715,9 +715,11 @@ if st.session_state.current_page == 'Paraphrase':
 
     paraphrase_sub_col1, paraphrase_sub_col2, paraphrase_sub_col3, paraphrase_sub_col4, paraphrase_sub_col5 = st.columns(5)
     with paraphrase_sub_col1:
-        paraphrase_settings_but = st.button("⚙ Settings", use_container_width=True, on_click=go_settings)
+        # paraphrase_settings_but = st.button("⚙ Settings", use_container_width=True, on_click=go_settings)
+        paraphrase_settings_but = st.button("⚙ Settings", on_click=go_settings)
     with paraphrase_sub_col3:
-        paraphrase_but = st.button("Paraphrase", use_container_width=True, type="primary")
+        # paraphrase_but = st.button("Paraphrase", use_container_width=True, type="primary")
+        paraphrase_but = st.button("Paraphrase", type="primary")
     with paraphrase_sub_col5:
         erase_paraphrase = st.button("❌ Delete", help="Clear the text field")
 
