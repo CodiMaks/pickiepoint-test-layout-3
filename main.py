@@ -2234,7 +2234,7 @@ if st.session_state.current_page == "Subscribe":
 if st.session_state.current_page == "Login":
 
     with (st.container(border=True)):
-        st.title("-\u00A0\u00A0\u00A0Welcome back\u00A0\u00A0\u00A0-")
+        st.title("-\u00A0\u00A0\u00A0Welcome back\u00A0\u00A0-")
 
         login_email_placeholder = st.text_input(label="", placeholder="📧 Email")
         login_password_placeholder = st.text_input(label="", placeholder="🔒 Password", type="password")
