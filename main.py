@@ -2270,7 +2270,7 @@ if st.session_state.current_page == "Login":
 
 if st.session_state.current_page == "Forgot password":
 
-    st.title("We got you covered")
+    st.title("|We got you covered|")
 
     st.subheader("")
 
