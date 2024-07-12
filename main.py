@@ -1862,9 +1862,9 @@ if st.session_state.current_page == "Summary":
 
 if st.session_state.current_page == 'Settings':
     
-    st.title("           ⚙ Settings")
+    st.title("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0⚙ Settings")
 
-    st.write("")
+    st.subheader("")
     
     subscription_container = st.container(border=True)
     with subscription_container:
@@ -1909,13 +1909,13 @@ if st.session_state.current_page == 'Settings':
     if faq_but:
         webbrowser.open("https://drive.google.com/file/d/1TkF4-JCcaAYbUVy5ayVvSSx-kaILP04K/view?usp=sharing")
 
-    st.subheader("")
+    st.write("")
 
     contact_container = st.container(border=True)
     with contact_container:
         st.button("📞 Contact", use_container_width=True, type="primary", on_click=go_contact_page)
 
-    st.subheader("")
+    st.write("")
 
     privacy_container = st.container(border=True)
     with privacy_container:
@@ -1924,7 +1924,7 @@ if st.session_state.current_page == 'Settings':
     if privacy_but:
         webbrowser.open("https://drive.google.com/file/d/1xrmeVvYhzHer834o_TDiNwGp0rvrTrV_/view?usp=sharing")
 
-    st.subheader("")
+    st.write("")
 
     terms_container = st.container(border=True)
     with terms_container:
@@ -1933,15 +1933,14 @@ if st.session_state.current_page == 'Settings':
     if terms_but:
         webbrowser.open("https://drive.google.com/file/d/1124X4IN1yQAvAYQVIebepBxeuNWJxTV5/view?usp=sharing")
 
-    st.subheader("")
+    st.write("")
 
     settings_back_but = st.button("↩ Back")
     if settings_back_but:
         st.session_state.current_page = "Summary"
         st.rerun()
 
-    st.header("")
-    st.write("")
+    st.subheader("")
 
     settings_subcol1, settings_subcol2, settings_subcol3 = st.columns(3)
     with settings_subcol2:
