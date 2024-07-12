@@ -2312,15 +2312,16 @@ if st.session_state.current_page == "Forgot password":
 
 if st.session_state.current_page == "Verification code":
 
-    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Enter code\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Enter code\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
 
-    st.write("")
+    st.subheader("")
 
     st.write(
         "Enter the verification code we sent to your email inbox. Please consider checking your spam as well.")
     verification_code_message_placeholder = st.empty()
     verification_code_placeholder = st.text_input(label="", placeholder="🔐 Verification code")
 
+    st.write("")
     st.write("")
     st.write("")
 
