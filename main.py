@@ -1120,9 +1120,9 @@ if st.session_state.current_page == "Summary":
 
     summary_message_placeholder = st.empty()
 
-    summary_length_area = st.text_input("S", label_visibility="hidden", placeholder="                                                                              Summary length in sentences")
+    summary_length_area = st.text_input("S", label_visibility="hidden", placeholder="                 Summary length in sentences")
 
-    summary_text_area = st.text_area("S", label_visibility="hidden", placeholder="Paste link or text to summarize...", height=300, value=summary_text_area_value)
+    summary_text_area = st.text_area("S", label_visibility="hidden", placeholder="Paste link or text to summarize...", height=450, value=summary_text_area_value)
 
     st.write()
 
@@ -1136,13 +1136,15 @@ if st.session_state.current_page == "Summary":
     conn.close()
 
     summary_sub_col1, summary_sub_col2, summary_sub_col3 = st.columns(3)
-    with summary_sub_col1:
-        summary_type = st_btn_select(("Abstractive", "Extractive"), index=index_summary_type)
-    with summary_sub_col2:
-        summary_but = st.button("Summarize", use_container_width=True, type="primary")
-    with summary_sub_col3:
-        summary_mode = st_btn_select(("Bullet points", "Plain text"), index=index_summary_mode)
+    # with summary_sub_col1:
+    summary_type = st_btn_select(("Abstractive", "Extractive"), index=index_summary_type)
+    # with summary_sub_col2:
+    summary_but = st.button("Summarize", use_container_width=True, type="primary")
+    # with summary_sub_col3:
+    summary_mode = st_btn_select(("Bullet points", "Plain text"), index=index_summary_mode)
 
+    st.write("")
+    
     summary_settings_but = st.button("⚙ Settings", use_container_width=True)
     if summary_settings_but:
         st.session_state.current_page = "Settings"
