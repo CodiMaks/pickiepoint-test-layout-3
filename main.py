@@ -1861,10 +1861,11 @@ if st.session_state.current_page == "Summary":
 
 
 if st.session_state.current_page == 'Settings':
-    settings_col1, settings_col2, settings_col3 = st.columns(3)
-    with settings_col2:
-        st.title("⚙ Settings")
+    
+    st.title("           ⚙ Settings")
 
+    st.write("")
+    
     subscription_container = st.container(border=True)
     with subscription_container:
         manage_sub_but = st.button("💳 Manage subscription", use_container_width=True, type="primary")
@@ -1872,7 +1873,7 @@ if st.session_state.current_page == 'Settings':
     if manage_sub_but:
         webbrowser.open("https://billing.stripe.com/p/login/test_fZecMXciia1B6Mo8ww")
 
-    st.subheader("")
+    st.write("")
 
     tts_container = st.container(border=True)
     with tts_container:
@@ -1899,7 +1900,7 @@ if st.session_state.current_page == 'Settings':
 
         st.rerun()
 
-    st.subheader("")
+    st.write("")
 
     faq_container = st.container(border=True)
     with faq_container:
