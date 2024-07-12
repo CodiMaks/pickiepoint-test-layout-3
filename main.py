@@ -553,6 +553,7 @@ if st.session_state.current_page == 'Paraphrase':
                                  default_index=2,
                                  on_change=callback, key="paraphrase_menu")
 
+    st.write("")
     erase_pre_paraphrase = st.button("❌ Delete", use_container_width=True, help="Clear the text field")
     pre_paraphrase_text_area = st.text_area("P", label_visibility="hidden", placeholder="Enter text to paraphrase...", height=170, value=pre_paraphrase_text_area_value)
 
@@ -565,7 +566,7 @@ if st.session_state.current_page == 'Paraphrase':
     with paraphrase_col3:
         paraphrase_audio_but = st.button(label=st.session_state['audio_icon'], use_container_width=True)
     with paraphrase_col4:
-        erase_paraphrase = st.button("❌ Delete", help="Clear the text field")
+        erase_paraphrase = st.button("❌ Delete", use_container_width=True, help="Clear the text field")
 
 
     def translate():
