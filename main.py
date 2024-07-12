@@ -2192,7 +2192,7 @@ if st.session_state.current_page == "Trial confirmation":
 
 if st.session_state.current_page == "Subscribe":
     st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Subscribe\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
-    st.image("pickiepoint_logo_profile_picture.png")
+    st.image("pickiepoint_logo_profile_picture.png", use_column_width=True)
 
     st.write("")
     st.write("")
