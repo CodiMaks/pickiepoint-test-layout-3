@@ -1949,7 +1949,7 @@ if st.session_state.current_page == 'Settings':
 
 
 if st.session_state.current_page == 'Contact':
-    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0📞 Contact\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0📞 Contact\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
 
     st.divider()
 
@@ -2033,6 +2033,7 @@ if st.session_state.current_page == 'Contact':
         st.session_state.current_page = "Settings"
         st.rerun()
 
+    st.write("")
     st.write("")
 
     st.button("⚙ Settings", use_container_width=True, on_click=go_settings)
