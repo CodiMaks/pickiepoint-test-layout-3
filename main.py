@@ -2270,16 +2270,15 @@ if st.session_state.current_page == "Login":
 
 if st.session_state.current_page == "Forgot password":
 
-    st.title("- \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0We got you covered\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 -")
+    st.title("We got you covered")
 
-    st.title("")
-    st.write("")
+    st.subheader("")
 
-    st.write("Just enter your email down below and we will send you a verification code that you can use to change your password")
+    st.write("Just enter your email that you've used at signup down below and we will send you a verification code that you can use to change your password")
     forgot_pass_message_placeholder = st.empty()
     forgot_pass_email_placeholder = st.text_input(label="", placeholder="📧 Email")
 
-    st.header("")
+    st.subheader("")
 
     forgot_pass_col1, forgot_pass_col2, forgot_pass_col3 = st.columns(3)
     with forgot_pass_col2:
