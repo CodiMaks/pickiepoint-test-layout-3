@@ -1133,13 +1133,9 @@ if st.session_state.current_page == "Summary":
     conn.commit()
     conn.close()
 
-    summary_sub_col1, summary_sub_col2, summary_sub_col3 = st.columns(3)
-    # with summary_sub_col1:
-    summary_type = st_btn_select(("Abstractive", "Extractive"), index=index_summary_type)
-    # with summary_sub_col2:
+    summary_type = st_btn_select(("Abstractive", "              Extractive"), index=index_summary_type)
     summary_but = st.button("Summarize", use_container_width=True, type="primary")
-    # with summary_sub_col3:
-    summary_mode = st_btn_select(("Bullet points", "Plain text"), index=index_summary_mode)
+    summary_mode = st_btn_select(("-\u00A0\u00A0\u00A0\u00A0Bullet points", "\u00A0\u00A0\u00A0\u00A0Plain text"), index=index_summary_mode)
 
     st.write("")
     
