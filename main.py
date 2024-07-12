@@ -2312,7 +2312,7 @@ if st.session_state.current_page == "Forgot password":
 
 if st.session_state.current_page == "Verification code":
 
-    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Enter code\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Enter code\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
 
     st.subheader("")
 
