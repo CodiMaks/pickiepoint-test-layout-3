@@ -40,7 +40,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS areas (youtube_content TEXT, pre_pa
 paraphrase_content TEXT, summary_content TEXT)""")
 
 # cursor.execute("DELETE FROM areas")
-cursor.execute("""INSERT INTO areas VALUES (?, ?, ?, ?)""", ("", "", "", ""))
+# cursor.execute("""INSERT INTO areas VALUES (?, ?, ?, ?)""", ("", "", "", ""))
 
 cursor.execute("SELECT youtube_content FROM areas")
 youtube_text_area_value = cursor.fetchone()[0]
@@ -60,7 +60,7 @@ conn = sqlite3.connect('settings_save.db')
 cursor = conn.cursor()
 
 cursor.execute("""CREATE TABLE IF NOT EXISTS settings (voice_gender TEXT, summary_type INTEGER, summary_mode INTEGER)""")
-cursor.execute("INSERT INTO settings VALUES (?, ?, ?)", ("Female", 0, 0))
+# cursor.execute("INSERT INTO settings VALUES (?, ?, ?)", ("Female", 0, 0))
 
 conn.commit()
 conn.close()
@@ -176,20 +176,26 @@ if st.session_state.current_page == 'Youtube':
                                  default_index=0,
                                  on_change=callback, key="youtube_menu")
 
-    pygame.mixer.init()
+    # pygame.mixer.init()
 
     st.write("")
 
-    col1, col2, col3, col4 = st.columns(4)
+    # col1, col2, col3, col4 = st.columns(4)
+    # with col1:
+        # youtube_copy_but = st.button("📋 Copy", use_container_width=True)
+    # with col2:
+        # translator = st.button("🌐 Translate", use_container_width=True)
+    # with col3:
+        # youtube_audio_but = st.button(label=st.session_state['audio_icon'], use_container_width=True)
+    # with col4:
+        # erase_youtube = st.button("❌ Delete", use_container_width=True, help="Clear the text field")
+    col1, col2 = st.columns(2)
     with col1:
         youtube_copy_but = st.button("📋 Copy", use_container_width=True)
+        st.button(label=st.session_state['audio_icon'], use_container_width=True)
     with col2:
         translator = st.button("🌐 Translate", use_container_width=True)
-    with col3:
-        youtube_audio_but = st.button(label=st.session_state['audio_icon'], use_container_width=True)
-    with col4:
         erase_youtube = st.button("❌ Delete", use_container_width=True, help="Clear the text field")
-
 
     def translate():
         lang_name = st.session_state['language_switch']
