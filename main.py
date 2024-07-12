@@ -2234,12 +2234,10 @@ if st.session_state.current_page == "Subscribe":
 if st.session_state.current_page == "Login":
 
     with (st.container(border=True)):
-        st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Welcome back\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
+        st.title("-\u00A0\u00A0\u00A0\u00A0Welcome back\u00A0\u00A0\u00A0\u00A0-")
 
         login_email_placeholder = st.text_input(label="", placeholder="📧 Email")
         login_password_placeholder = st.text_input(label="", placeholder="🔒 Password", type="password")
-
-        st.text("")
 
         login_pass_col1, login_pass_col2, login_pass_col3 = st.columns(3)
         with login_pass_col3:
@@ -2249,14 +2247,13 @@ if st.session_state.current_page == "Login":
             st.session_state.current_page = "Forgot password"
             st.rerun()
 
-        st.title("")
-        st.header("")
+        st.subheader("")
 
         login_sub_col1, login_sub_col2, login_sub_col3 = st.columns(3)
         with login_sub_col2:
             login_but = st.button("Login", type="primary", use_container_width=True)
             st.header("")
-            st.caption('<span style="font-size:27px; color:white;">Need an account ?</span>', unsafe_allow_html=True)
+            st.caption('<span style="font-size:22px; color:white;">-\u00A0\u00A0Need an account ?\u00A0\u00A0-</span>', unsafe_allow_html=True)
             no_account_but = st.button("Create one", use_container_width=True)
 
         if no_account_but:
@@ -2266,11 +2263,9 @@ if st.session_state.current_page == "Login":
         if login_but:
             pass
 
-        st.title("")
+        st.text("")
 
-        login_img_col1, login_img_col2, login_img_col3 = st.columns(3)
-        with login_img_col2:
-            st.image("pickiepoint_logo_profile_picture.png", use_column_width=True)
+        st.image("pickiepoint_logo_profile_picture.png", use_column_width=True)
 
 
 if st.session_state.current_page == "Forgot password":
