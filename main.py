@@ -714,15 +714,17 @@ if st.session_state.current_page == 'Paraphrase':
     paraphrase_text_area = st.text_area("P", label_visibility="hidden", placeholder="Paraphrased content will appear here...", height=170, value=paraphrase_text_area_value)
 
     # paraphrase_sub_col1, paraphrase_sub_col2, paraphrase_sub_col3, paraphrase_sub_col4, paraphrase_sub_col5 = st.columns(5)
-    paraphrase_sub_col1, paraphrase_sub_col2 = st.columns(2)
+    paraphrase_sub_col1, paraphrase_sub_col2, paraphrase_sub_col3 = st.columns(3)
     with paraphrase_sub_col1:
+        pass
         # paraphrase_settings_but = st.button("⚙ Settings", use_container_width=True, on_click=go_settings)
-        paraphrase_settings_but = st.button("⚙ Settings", on_click=go_settings)
+        # paraphrase_settings_but = st.button("⚙ Settings", on_click=go_settings)
     with paraphrase_sub_col2:
         # paraphrase_but = st.button("Paraphrase", use_container_width=True, type="primary")
-        paraphrase_but = st.button("Paraphrase", type="primary")
-    
-    erase_paraphrase = st.button("❌ Delete", help="Clear the text field")
+        # paraphrase_but = st.button("Paraphrase", type="primary")
+        pass
+    with paraphrase_sub_col3:
+        erase_paraphrase = st.button("❌ Delete", help="Clear the text field")
 
     st.write("")
 
