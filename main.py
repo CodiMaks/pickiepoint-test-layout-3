@@ -2333,21 +2333,20 @@ if st.session_state.current_page == "Verification code":
 
 
 if st.session_state.current_page == "Password change":
-    st.title("- \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Update your password\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 -")
+    st.title("Update your password")
 
-    st.title("")
-    st.write("")
+    st.subheader("")
 
-    st.write(
-        "You can now set up a new password for your account. Keep it somewhere safe as you will need it the next time you login. After you update it, you will be invited to login with this new password.")
+    st.write("You can now set up a new password for your account. Keep it somewhere safe as you will need it the next time you login.")
+    st.write("After you update it, you will be invited to login with this new password.")
     pass_change_message_placeholder = st.empty()
     pass_change_placeholder = st.text_input(label="", placeholder="🔒 New password", type="password")
 
-    st.header("")
+    st.write("")
+    st.write("")
+    st.write("")
 
-    pass_change_col1, pass_change_col2, pass_change_col3 = st.columns(3)
-    with pass_change_col2:
-        verify_code_but = st.button("Update password", type="primary", use_container_width=True)
+    verify_code_but = st.button("Update password", type="primary", use_container_width=True)
 
     go_summary_screen_but = st.button("Go summary")
 
