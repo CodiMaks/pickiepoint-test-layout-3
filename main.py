@@ -2191,10 +2191,11 @@ if st.session_state.current_page == "Trial confirmation":
 
 
 if st.session_state.current_page == "Subscribe":
-    st.title("Pickiepoint sub")
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Subscribe\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
     st.image("pickiepoint_logo_profile_picture.png")
 
-    st.subheader("")
+    st.write("")
+    st.write("")
 
     st.caption('<span style="font-size:32px; font-weight:bold; color:orange;">-\u00A0\u00A0\u00A0Trial has ended\u00A0\u00A0\u00A0-</span>',
                unsafe_allow_html=True)
