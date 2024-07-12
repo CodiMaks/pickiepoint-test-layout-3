@@ -2089,9 +2089,8 @@ if st.session_state.current_page == "Sign up":
 
 
     with st.container(border=True):
-        sign_title_col1, sign_title_col2, sign_title_col3 = st.columns(3)
-        with sign_title_col2:
-            st.title("Welcome")
+        
+        st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Welcome\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
 
         email_placeholder = st.text_input(label="", placeholder="📧 Email")
         password_placeholder = st.text_input(label="", placeholder="🔒 Password", type="password")
@@ -2112,30 +2111,26 @@ if st.session_state.current_page == "Sign up":
 
         signup_message_placeholder = st.empty()
 
-        sign_sub_col1, sign_sub_col2, sign_sub_col3 = st.columns(3)
-        with sign_sub_col2:
-            signup_but = st.button("Create account", type="primary", use_container_width=True)
+        signup_but = st.button("Create account", type="primary", use_container_width=True)
 
         if signup_but:
             create_account()
 
-        st.title("")
+        st.subheader("")
 
         sign_login_col1, sign_login_col2, sign_login_col3 = st.columns(3)
         with sign_login_col2:
-            st.caption('<span style="font-size:19px; color:white;">Already have an account ?</span>', unsafe_allow_html=True)
+            st.caption('<span style="font-size:19px; color:white;">-\u00A0\u00A0Already have an account ?\u00A0\u00A00-</span>', unsafe_allow_html=True)
             login_to_account_but = st.button("Log in", use_container_width=True)
 
         if login_to_account_but:
             st.session_state.current_page = "Login"
             st.rerun()
 
-        st.title("")
+        st.subheader("")
 
-        sign_img_col1, sign_img_col2, sign_img_col3 = st.columns(3)
-        with sign_img_col2:
-            # st.image("pickiepoint_logo_profile_picture.png", width=180)
-            st.image("pickiepoint_logo_profile_picture.png", use_column_width=True)
+        st.image("pickiepoint_logo_profile_picture.png", width=180)
+            # st.image("pickiepoint_logo_profile_picture.png", use_column_width=True)
 
         go_trial_but = st.button("Go Trial")
         if go_trial_but:
