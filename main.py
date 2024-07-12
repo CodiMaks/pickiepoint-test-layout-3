@@ -2090,7 +2090,7 @@ if st.session_state.current_page == "Sign up":
 
     with st.container(border=True):
         
-        st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Welcome\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
+        st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Welcome\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
 
         email_placeholder = st.text_input(label="", placeholder="📧 Email")
         password_placeholder = st.text_input(label="", placeholder="🔒 Password", type="password")
@@ -2120,14 +2120,13 @@ if st.session_state.current_page == "Sign up":
 
         sign_login_col1, sign_login_col2, sign_login_col3 = st.columns(3)
         with sign_login_col2:
-            st.caption('<span style="font-size:19px; color:white;">-\u00A0\u00A0\u00A0Already have an account ?\u00A0\u00A0-</span>', unsafe_allow_html=True)
+            st.caption('<span style="font-size:19px; color:white;">-\u00A0\u00A0\u00A0\u00A0Already have an account ?\u00A0\u00A0\u00A0-</span>', unsafe_allow_html=True)
             login_to_account_but = st.button("Log in", use_container_width=True)
 
         if login_to_account_but:
             st.session_state.current_page = "Login"
             st.rerun()
 
-        st.write("")
         st.write("")
 
         # st.image("pickiepoint_logo_profile_picture.png", width=180)
