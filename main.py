@@ -2140,14 +2140,12 @@ if st.session_state.current_page == "Sign up":
 
 if st.session_state.current_page == "Trial":
 
-    # trial_title_col1, trial_title_col2, trial_title_col3 = st.columns(3)
-    # with trial_title_col2:
-    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Get started\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Get started\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
     st.image("pickiepoint_logo_profile_picture.png", use_column_width=True)
 
     st.subheader("")
 
-    st.caption('<span style="font-size:32px; font-weight:bold; color:green;">-\u00A0\u00A0\u00A03 days free trial\u00A0\u00A0\u00A0-</span>', unsafe_allow_html=True)
+    st.caption('<span style="font-size:32px; font-weight:bold; color:green;">-\u00A0\u00A0\u00A03 days free trial\u00A0\u00A0-</span>', unsafe_allow_html=True)
     st.caption('<span style="font-size:22px; font-weight:bold; color:green;">-\u00A0\u00A0\u00A0\u00A0No credit card required\u00A0\u00A0\u00A0\u00A0-</span>', unsafe_allow_html=True)
     st.caption('<span style="font-size:26px; color:yellow;">-\u00A0\u00A0\u00A0\u00A0Then 12.99$/month\u00A0\u00A0\u00A0\u00A0\u00A0-</span>', unsafe_allow_html=True)
 
