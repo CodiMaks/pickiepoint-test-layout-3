@@ -2270,7 +2270,7 @@ if st.session_state.current_page == "Login":
 
 if st.session_state.current_page == "Forgot password":
 
-    st.title("- We got you covered-")
+    st.title("-We got you covered-")
 
     st.subheader("")
 
@@ -2278,6 +2278,7 @@ if st.session_state.current_page == "Forgot password":
     forgot_pass_message_placeholder = st.empty()
     forgot_pass_email_placeholder = st.text_input(label="", placeholder="📧 Email")
 
+    st.write("")
     st.write("")
 
     send_code_but = st.button("Send code", type="primary", use_container_width=True)
