@@ -1949,10 +1949,7 @@ if st.session_state.current_page == 'Settings':
 
 
 if st.session_state.current_page == 'Contact':
-    contact_col1, contact_col2, contact_col3 = st.columns(3)
-    with contact_col2:
-        st.title("📞 Contact")
-
+    st.title("-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0📞 Contact\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-")
 
     st.divider()
 
@@ -1983,7 +1980,7 @@ if st.session_state.current_page == 'Contact':
     if tiktok_but:
         webbrowser.open("https://www.tiktok.com/@pickiepoint?is_from_webapp=1&sender_device=pc")
 
-    st.subheader("")
+    st.write("")
 
     instagram_container = st.container(border=True)
     with instagram_container:
@@ -1992,7 +1989,7 @@ if st.session_state.current_page == 'Contact':
     if instagram_but:
         webbrowser.open("https://www.instagram.com/pickiepoint?igsh=NHl2c3I2YnRqNmVt")
 
-    st.subheader("")
+    st.write("")
 
     facebook_container = st.container(border=True)
     with facebook_container:
@@ -2001,7 +1998,7 @@ if st.session_state.current_page == 'Contact':
     if facebook_but:
         webbrowser.open("https://www.facebook.com/profile.php?id=61559802255231")
 
-    st.subheader("")
+    st.write("")
 
     snapchat_container = st.container(border=True)
     with snapchat_container:
@@ -2011,7 +2008,7 @@ if st.session_state.current_page == 'Contact':
         webbrowser.open(
             "https://profile.snapchat.com/4b536818-4e44-409d-969f-e71ace4000a4/profiles/93b58548-a490-4204-af7a-ce93343552f9/details/public-stories?ref_aid=af78ba9a-96e9-48bd-85e1-2434facb2a6a")
 
-    st.subheader("")
+    st.write("")
 
     twitter_container = st.container(border=True)
     with twitter_container:
@@ -2020,7 +2017,7 @@ if st.session_state.current_page == 'Contact':
     if twitter_but:
         webbrowser.open("https://x.com/pickiepoint")
 
-    st.subheader("")
+    st.write("")
 
     pinterest_container = st.container(border=True)
     with pinterest_container:
@@ -2029,21 +2026,17 @@ if st.session_state.current_page == 'Contact':
     if pinterest_but:
         webbrowser.open("https://pin.it/3g7YfkVcU")
 
-    st.subheader("")
+    st.write("")
 
     contact_back_but = st.button("↩ Back")
     if contact_back_but:
         st.session_state.current_page = "Settings"
         st.rerun()
 
-    st.header("")
     st.write("")
 
-    contact_sub_col1, contact_sub_col2 = st.columns(2)
-    with contact_sub_col1:
-        st.button("⚙ Settings", use_container_width=True, on_click=go_settings)
-    with contact_sub_col2:
-        st.button("🏠 Home", use_container_width=True, on_click=go_home)
+    st.button("⚙ Settings", use_container_width=True, on_click=go_settings)
+    st.button("🏠 Home", use_container_width=True, on_click=go_home)
 
 
 if st.session_state.current_page == "Sign up":
