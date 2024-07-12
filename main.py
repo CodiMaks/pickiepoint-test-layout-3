@@ -2234,7 +2234,7 @@ if st.session_state.current_page == "Subscribe":
 if st.session_state.current_page == "Login":
 
     with (st.container(border=True)):
-        st.title("-\u00A0\u00A0Welcome back\u00A0\u00A0-")
+        st.title("-\u00A0\u00A0\u00A0Welcome back\u00A0\u00A0\u00A0-")
 
         login_email_placeholder = st.text_input(label="", placeholder="📧 Email")
         login_password_placeholder = st.text_input(label="", placeholder="🔒 Password", type="password")
@@ -2253,7 +2253,7 @@ if st.session_state.current_page == "Login":
         with login_sub_col2:
             login_but = st.button("Login", type="primary", use_container_width=True)
             st.subheader("")
-            st.caption('<span style="font-size:18px; color:white;">-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Need an account ?\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-</span>', unsafe_allow_html=True)
+            st.caption('<span style="font-size:18px; color:white;">-\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Need an account ?\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0-</span>', unsafe_allow_html=True)
             no_account_but = st.button("Create one", use_container_width=True)
 
         if no_account_but:
