@@ -347,8 +347,6 @@ if st.session_state.current_page == 'Youtube':
     
     transcribe_but = st.button("Transcribe", use_container_width=True, type="primary")
 
-    st.write("")
-
     bottom_col1, bottom_col2, bottom_col3 = st.columns(3)
     with bottom_col2:
         settings_but = st.button("⚙ Settings", use_container_width=True, on_click=go_settings)
@@ -1120,9 +1118,9 @@ if st.session_state.current_page == "Summary":
 
     summary_message_placeholder = st.empty()
 
-    summary_length_area = st.text_input("S", label_visibility="hidden", placeholder="                 Summary length in sentences")
+    summary_length_area = st.text_input("S", label_visibility="hidden", placeholder="             Summary length in sentences")
 
-    summary_text_area = st.text_area("S", label_visibility="hidden", placeholder="Paste link or text to summarize...", height=450, value=summary_text_area_value)
+    summary_text_area = st.text_area("S", label_visibility="hidden", placeholder="Paste link or text to summarize...", height=500, value=summary_text_area_value)
 
     st.write()
 
