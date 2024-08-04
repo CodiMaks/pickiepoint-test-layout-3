@@ -1133,7 +1133,7 @@ if st.session_state.current_page == "Summary":
     conn.commit()
     conn.close()
 
-    summary_type = st_btn_select(("\u00A0\u00A0\u00A0\u00A0Abstractive\u00A0\u00A0\u00A0\u00A0", "\u00A0\u00A0\u00A0\u00A0Extractive\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"), index=index_summary_type)
+    # summary_type = st_btn_select(("\u00A0\u00A0\u00A0\u00A0Abstractive\u00A0\u00A0\u00A0\u00A0", "\u00A0\u00A0\u00A0\u00A0Extractive\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"), index=index_summary_type)
     summary_but = st.button("Summarize", use_container_width=True, type="primary")
     summary_mode = st_btn_select(("\u00A0\u00A0\u00A0\u00A0Bullet points\u00A0\u00A0", "\u00A0\u00A0\u00A0\u00A0\u00A0Plain text\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"), index=index_summary_mode)
 
